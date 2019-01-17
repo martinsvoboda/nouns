@@ -1,7 +1,7 @@
 # International list of nouns
 Nouns in singular form (lemmas) generated from https://universaldependencies.org/ project.
 
-Nouns are available for 75 languages:
+Nouns are available in 75 languages:
 * Afrikaans
 * Akkadian
 * Amharic
