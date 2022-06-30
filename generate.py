@@ -1,9 +1,10 @@
 
 import os
 
-
 # download and unpack treebanks from https://universaldependencies.org/#download
-TREEBANKS_DIR = os.path.abspath('./ud-treebanks-v2.3/')
+
+TREEBANKS_VERSION = 'v2.10'
+TREEBANKS_DIR = os.path.abspath(f'./ud-treebanks-{TREEBANKS_VERSION}/')
 NOUNS_DIR = os.path.abspath('./nouns')
 
 
@@ -14,7 +15,6 @@ def get_treebanks_per_lang(dir):
     treebanks_per_lang = {}
 
     for root, dirs, files in os.walk(dir):
-
         files = [p for p in files if p.endswith('-train.conllu')]
 
         for name in files:
@@ -38,15 +38,31 @@ def get_nouns(conllu_filepaths):
                     continue
 
                 columns = line.split('\t')
+                if len(columns) < 6:
+                    continue
 
                 lemma = columns[2]
                 pos_tag = columns[3]
+                flags = columns[5]
 
                 if pos_tag != 'NOUN':
                     continue
 
+                ignore_flags = (
+                    'Foreign=Yes',  # ignore foreign words
+                    'Abbr=Yes',  # remove abbreviations
+                    'Hyph=Yes',  # remove DE words with ending with hyph
+                )
+
+                if any(flag in flags for flag in ignore_flags):
+                    continue
+
+                # skip lemmas with non-alpha characters on begging or end
+                if not lemma[0].isalpha() or not lemma[-1].isalpha():
+                    continue
+
                 nouns.add(lemma)
-    return nouns
+    return sorted(nouns)
 
 
 def nouns_to_file(output_dir, language_code, nouns):
@@ -62,50 +78,4 @@ if __name__ == '__main__':
     for language_code, filepaths in treebanks.items():
         print('Processing', language_code, '({} conllu files)'.format(len(filepaths)))
         nouns = get_nouns(filepaths)
-
         nouns_to_file(NOUNS_DIR, language_code, nouns)
-
-
-
-
-
-
-
-# conllu_path = '/Users/martin.svoboda/Downloads/ud/ud-treebanks-v2.3/UD_Czech-PDT/cs_pdt-ud-train.conllu'
-#
-#
-# nouns = set()
-#
-# with open(conllu_path) as f:
-#     for line in f.readlines():
-#         if not line[0].isdigit():
-#             continue
-#
-# # """
-# # | ID | Sentence segmentation and (surface) tokenization was automatically done and then hand-corrected; see [PDT documentation](http://ufal.mff.cuni.cz/pdt2.0/doc/pdt-guide/en/html/ch02.html). Splitting of fused tokens into syntactic words was done automatically during PDT-to-UD conversion. |
-# # | FORM | Identical to Prague Dependency Treebank 3.0 form. |
-# # | LEMMA | Manual selection from possibilities provided by morphological analysis: two annotators and then an arbiter. PDT-to-UD conversion stripped from lemmas the ID numbers distinguishing homonyms, semantic tags and comments; this information is preserved as attributes in the MISC column. |
-# # | UPOSTAG | Converted automatically from XPOSTAG (via [Interset](https://ufal.mff.cuni.cz/interset)), from the semantic tags in PDT lemma, and occasionally from other information available in the treebank; human checking of patterns revealed by automatic consistency tests. |
-# # | XPOSTAG | Manual selection from possibilities provided by morphological analysis: two annotators and then an arbiter. |
-# # | FEATS | Converted automatically from XPOSTAG (via Interset), from the semantic tags in PDT lemma, and occasionally from other information available in the treebank; human checking of patterns revealed by automatic consistency tests. |
-# # | HEAD | Original PDT annotation is manual, done by two independent annotators and then an arbiter. Automatic conversion to UD; human checking of patterns revealed by automatic consistency tests. |
-# # | DEPREL | Original PDT annotation is manual, done by two independent annotators and then an arbiter. Automatic conversion to UD; human checking of patterns revealed by automatic consistency tests. |
-# # | DEPS | &mdash; (currently unused) |
-# # | MISC | Information about token spacing taken from PDT annotation. Lemma / word sense IDs, semantic tags and comments on meaning moved here from the PDT lemma. |
-# # """
-#
-#         columns = line.split('\t')
-#
-#         word = columns[1]
-#         lemma = columns[2]
-#         pos_tag = columns[3]
-#
-#         if pos_tag != 'NOUN':
-#             continue
-#
-#         nouns.add(lemma)
-#
-#         # print(word, lemma, pos_tag)
-#
-# print(len(nouns))
-# print(nouns)

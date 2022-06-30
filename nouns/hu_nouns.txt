@@ -1,19 +1,3 @@
-1.
-10.
-12.
-17.
-18.
-19.
-21.
-26.
-29.
-3.
-30.
-31.
-4-5.
-4.
-6.
-8.
 AIDS
 AIDS-es
 APEH-elnök
@@ -301,7 +285,6 @@ dolog
 domb
 domborzat
 donor
-dr.
 drogfogyasztó
 dugó
 durvaság
@@ -344,7 +327,6 @@ elegancia
 eleje
 elem
 elemző
-elfogad-
 elfoglaltság
 elismerés
 eljárás
@@ -471,7 +453,6 @@ fenntartás
 fenyőfa
 fertőzött
 festmény
-festmény-
 fesztivál
 feszültség
 fia
@@ -480,7 +461,6 @@ figura
 figyelem
 figyelmeztetés
 film
-film-
 filmadag
 filmszemle
 filmvászon
@@ -817,7 +797,6 @@ kedd
 kedv
 kefir
 kegytárgy
-kegytárgy-
 keletnémet
 kenyereskocsi
 kenyér
@@ -839,8 +818,6 @@ kezelő
 kezesség
 kezességvállalás
 kft
-kht.
-ki-
 kiadvány
 kiadás
 kiadó
@@ -969,7 +946,6 @@ költség
 költségvetés
 költő
 könyv
-könyv-
 könyvritkaság
 kör
 környezet
@@ -1043,7 +1019,6 @@ lektor
 leleplezés
 lelkesedés
 lemez
-lemez-
 lemezfelvétel
 lemondás
 lendület
@@ -1586,7 +1561,6 @@ szél
 szép
 szépség
 szét+választás
-szín-
 színfal
 színfolt
 színhely
@@ -1950,7 +1924,6 @@ zöm
 éjszaka
 él
 élelem
-élelem-
 élelmiszerár
 élet
 életerő

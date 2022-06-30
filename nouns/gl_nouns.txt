@@ -1,17 +1,3 @@
-12.6º
-12º
-1ª
-2.º
-2º
-3.º
-3º
-4.º
-45,90euros
-55,47euros
-5º
-68º
-72
-CC.
 Lofca
 abandono
 abaneo
@@ -277,7 +263,6 @@ arredor
 arrendamento
 arrábida
 arsenal
-art.
 arte
 artellamento
 arteria
@@ -289,7 +274,6 @@ artigo
 artillería
 artista
 artrite
-arts.
 artículo
 arxentino
 asalariado
@@ -492,7 +476,6 @@ bía
 bóla
 bólos
 c
-c.
 cabana
 cabaza
 cabeceira
@@ -526,7 +509,6 @@ calefacción
 calendario
 calidade
 calidade-precio
-califf
 caligrafía
 calor
 calzado
@@ -739,7 +721,6 @@ clorose
 cláusula
 clústeres
 cm
-co2
 co2/kg
 coalición
 cobertura
@@ -1583,7 +1564,6 @@ esência
 eta
 etapa
 etc
-etc.
 etcétera
 etioloxía
 etnicidade
@@ -1979,7 +1959,6 @@ humidade
 humor
 hábitat
 hábito
-híbrido2
 i
 ianqui
 ibuprofeno
@@ -2200,14 +2179,11 @@ it
 itinerario
 iudice
 j
-j.
-j.m.
 josupeit
 junto
 k
 karo
 kg
-km2
 kuba
 kwh
 la
@@ -2322,7 +2298,6 @@ lóbulo
 lóxica
 lúa
 m
-m2
 mabegondo
 macaco
 machismo
@@ -2573,7 +2548,6 @@ músculo
 música
 músico
 n
-n.
 nacemento
 nacido
 nacionalidade
@@ -2615,7 +2589,6 @@ nivelación
 nixeria
 niñificación
 niño
-no2
 nobreza
 noción
 nogueira
@@ -2693,7 +2666,6 @@ ombro
 omisión
 on-line
 onza
-op.
 opción
 operación
 operador
@@ -3164,7 +3136,6 @@ psicastenia
 psicólogo
 psicótico
 ptas
-ptas.
 pts
 pub
 publica-se
@@ -3569,7 +3540,6 @@ sistema
 siticas
 sitio
 situación
-so2
 soberanía
 sobrante
 sobrecarga
@@ -3622,7 +3592,6 @@ soviético
 soño
 spector
 sras
-sras.
 status
 stj
 stock
@@ -3940,6 +3909,7 @@ vencemento
 venda
 vendedor
 venezolano
+ventas
 ventilación
 vento
 ventá
@@ -4063,6 +4033,7 @@ xirasol
 xofre
 xogador
 xogo
+xogos
 xoia
 xornada
 xornal

@@ -28,7 +28,6 @@ lijeńca
 lisćina
 lud
 lěto
-lětoličba
 lětstotk
 madźaršćina
 markhrabja
@@ -49,7 +48,6 @@ perioda
 pućowanje
 póda
 přepasenje
-přikład
 připućowanje
 raz
 rěka

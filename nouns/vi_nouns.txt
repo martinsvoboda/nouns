@@ -1,14 +1,7 @@
-%
-&
-12 - 2003
-43H-016
-54N-7
-A5
 Anh
 Anh ta
 B
 BH
-BT2
 BV
 Ban đầu
 Biên Hòa
@@ -76,7 +69,6 @@ Gia đình
 Giá
 Giọng
 Giờ
-H.
 HCM
 Hai Bà Trưng
 Hiểm họa
@@ -229,7 +221,6 @@ Rùa
 Rạch Cát
 SUNY Brockport Vietnam
 Sanofi
-Sea Games 22
 Sinh
 Sài Gòn
 Sáng
@@ -243,7 +234,6 @@ TP
 TP . HCM
 TP .HCM
 TP HCM
-TP.
 TP. HCM
 TP.HCM
 TT
@@ -296,7 +286,6 @@ Tú
 UBND
 Ung bướu
 Uyên Hưng
-V . H .
 VKS
 VN
 Viện
@@ -848,7 +837,6 @@ lao công
 lao động
 linh tính
 liên
-liên cảng A5
 liên quân
 liều
 liệt sĩ
@@ -903,7 +891,6 @@ lửa
 lực
 lực lượng
 m
-m3
 ma
 ma túy
 mai
@@ -1139,7 +1126,6 @@ phố
 phố phường
 phụ nữ
 phủ lý
-q.1
 quai hàm
 quan hệ
 quan điểm
